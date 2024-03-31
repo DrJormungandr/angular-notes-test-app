@@ -1,0 +1,31 @@
+.note-edit-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding: 1em;
+    .note-edit-input {
+        border: solid 2px lightblue;
+        border-radius: 6px;
+        padding: 0.4em;
+        background: aliceblue;
+    }
+    .note-edit-input:focus {
+        outline: solid 2px lightskyblue;
+    }
+    .title-input {
+        font-weight: bold;
+    }
+    .description-text-area {
+        resize: none;
+        height: 20em;
+        margin-top: 0.6em;
+    }
+    .buttons-container {
+        width: 100%;
+        margin-top: 1em;
+        .note-edit-button {
+            margin: 0px 4px;
+        }
+    }
+}

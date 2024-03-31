@@ -1,0 +1,14 @@
+<div class="tags-container">
+    <div class="tags-list">
+        @for (tag of tagsList; track $index) {
+            <div class="tag-container">
+                <span> {{ tag }} </span>
+                <button class="delete-tag-button" (click)="deleteTag(tag)" title="Удалить тэг">x</button>
+            </div>
+        }
+    </div>
+    <div class="add-tag-container"> 
+        <input [formControl]="newTagControl"/>
+        <button class="add-tag-button" (click)="addTag()" [disabled]="!isValid">Добавить</button>
+    </div>
+</div>

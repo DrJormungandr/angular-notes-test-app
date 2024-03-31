@@ -1,0 +1,41 @@
+.notes-container {
+    .note-card {
+        border-radius: 10px;
+        background-color: aliceblue;
+        padding: 14px;
+        margin: 0.6em 1em;
+        .note-card-header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-weight: bold;
+            margin-bottom: 6px;
+            border-bottom: solid 1px lightblue;
+            .note-header-buttons {
+                margin: 4px 4px 4px auto;
+                .note-card-button {
+                    margin: 0px 4px;
+                }
+            }
+        }
+        .note-card-descripton {
+            margin-top: 0.6em;
+        }
+    }
+    .create-note-button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .create-note-button {
+            margin: 0.4em;
+            font-size: 2em;
+            background-color: lightskyblue;
+            border-radius: 1em;
+            width: 100%;
+            &:hover {
+                background-color: #87cefa8a;
+            }
+        }
+
+    }
+}

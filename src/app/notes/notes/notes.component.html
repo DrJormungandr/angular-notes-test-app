@@ -1,0 +1,17 @@
+<div class="notes-container">
+    @for (note of notes; track $index) {
+        <div class="note-card">
+            <div class="note-card-header"> 
+                <span> {{note.title}} </span>
+                <div class="note-header-buttons">
+                    <button class="note-card-button" [routerLink]="['./note']" [queryParams]="{id: note.id}">Редактировать</button>
+                    <button class="button-delete note-card-button" (click)="deleteNote(note.id)">Удалить</button>
+                </div>
+            </div>
+            <div class="note-card-descripton"> {{note.description}} </div>
+        </div>
+    }
+    <div class="create-note-button-container">
+        <button class="create-note-button" [routerLink]="['./note']">+</button>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="note-edit-container">
+    <input class="note-edit-input title-input" [formControl]="title" placeholder="Title">
+    <textarea class="note-edit-input description-text-area" [formControl]="description" placeholder="Description"></textarea>
+    <div class="buttons-container">
+        <button class="note-edit-button" (click)="saveNote()">
+            Сохранить
+        </button>
+        <button class="note-edit-button" (click)="backToList()">
+            Назад
+        </button>
+    </div>
+</div>

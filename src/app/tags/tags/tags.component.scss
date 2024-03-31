@@ -1,0 +1,28 @@
+.tags-container {
+    .tags-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0.6em;
+        .tag-container{
+            margin: 0.2em;
+            padding: 0.6em;
+            border-radius: 1em;
+            color: white;
+            background: #41c3ed;
+            .delete-tag-button{
+                padding: 0;
+                border-radius: 1em;
+                color: white;
+                background: none;
+                width: 1em;
+            }
+        }
+    }
+    .add-tag-container{
+        margin: 0 1em;
+        .add-tag-button{
+            margin: 0 1em;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<div class="reminders-container">
+    @for (reminder of reminders; track $index) {
+        <div class="reminder-card"> 
+            <div class="reminder-date"> {{reminder.dueDate | date:"medium" }} </div>
+            <div class="reminder-text"> {{reminder.description}} </div>
+        </div>
+    }
+    <div class="reminder-card">
+        <input class="reminder-edit-input reminder-date" type="datetime-local" placeholder="01\01\2024-00:00" [formControl]="date">
+        <input class="reminder-edit-input reminder-text" type="text" placeholder="Описание" [formControl]="description">
+        <button class="reminder-create-button" [disabled]="!buttonEnabled" (click)="createReminder()">Создать</button>
+    </div>
+</div>

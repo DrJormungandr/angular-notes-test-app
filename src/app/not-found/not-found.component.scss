@@ -1,0 +1,15 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  color: #474747;
+  .not-found-code {
+    font-size: 12em;
+  }
+  .not-found-text {
+    font-size: 2em;
+  }
+}
